@@ -1,0 +1,415 @@
+<html>
+<head></head>
+<body></body>body> == 50
+<html>
+
+
+
+<div class = "topbar">
+    <div class= "settings"></div>
+    <div class="tinderLogo"></div>
+    <div class="messageBubble"></div>
+</div>
+
+
+<div class="page"> 
+<div onclick="hidecard()" id="card">
+<div class="picture"></div>
+<div class="picInfo">
+    <a class="name">Evan<span style= "font-weight: 400"> 30</span></a>
+    <a class="job">snap Inc. founder</a>
+</div>
+</div>
+
+<div onclick="hidecard2()" id="card"></div>
+<div class="pictureTwo"></div>
+<div class="picInfo">
+    <a class="name">MarkZuckerberg<span style= "font-weight: 400"> 30</span></a>
+    <a class="job">Facebook founder</a>
+</div>
+</div>
+
+<div onclick="hidecard3()" id="card"></div>
+<div class="pictureThree"></div>
+<div class="picInfo">
+    <a class="name">patrick<span style= "font-weight: 400"> 30</span></a>
+    <a class="job">American Singer</a>
+</div>
+</div>
+
+<div onclick="hidecard4()" id="card"></div>
+<div class="pctureFour"></div>
+<div class="picInfo">
+    <a class="name">taylor<span style= "font-weight: 400"> 30</span></a>
+    <a class="job">American Singer</a>
+</div>
+</div>
+
+<div onclick="hidecard5()" id="card"></div>
+<div class="pictureFive"></div>
+<div class="picInfo">
+    <a class="name">jennifer<span style= "font-weight: 400"> 30</span></a>
+    <a class="job">American actor</a>
+</div>
+</div>
+
+<div class= "bottomBar">
+    <div class="smallRing">
+      <div class="replayBtn"></div>
+    </div>
+    <div class="Ring">
+        <div class="closeBtn"></div>
+    </div>
+    <div class="Ring">
+        <div class="heartBtn"></div>
+    </div>
+    <div class="smallRing">
+        <div class="starBtn"></div>
+        </div>
+    </div>
+
+
+    <div class="match">
+        <div class="hipster">It's a match:)</div>
+        <div class="subText">you and patrick liked each other</div>
+        <div class="pictures">
+            <div class="roundPic"></div>
+            <div class="roundPicTwo"></div>
+        </div>
+        <div class="mesage">SEND MESSAGE patrick will contact you soon!</div>
+        <div class="swiping">KEEP SWIPING</div>
+
+
+<script>
+
+    function hidecard() {
+        var card = document.getElementById("card");
+        card.style.display = "relative";
+        card.style.left = "1000px";
+        card.style.top = "-100px";
+    }
+
+    function hidecard2() {
+        var card = document.getElementById("card2");
+        card.style.display = "relative";
+        card.style.left = "1000px";
+        card.style.top = "-100px";
+    }
+
+    function hidecard3() {
+        var card = document.getElementById("card3");
+        card.style.display = "relative";
+        card.style.left = "1000px";
+        card.style.top = "-100px";
+    }
+
+    function hidecard4() {
+        var card = document.getElementById("card4");
+        card.style.display = "relative";
+        card.style.left = "1000px";
+        card.style.top = "-100px";
+    }
+
+    function hidecard5() {
+        var card = document.getElementById("card5");
+        card.style.display = "relative";
+        card.style.left = "1000px";
+        card.style.top = "-100px";
+        var match = document.getElementById("match");
+        match.style.display = "block";
+        
+        var blur = document.getElementById("mobile");
+        blur.style.filter = ("blur(5px)")    
+        }
+
+</script>
+
+
+<style>
+
+
+    .match {
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        background-color: darkslategray;
+        opacity: 0.7;
+    }
+
+    .hipster {
+        text-align: center;
+        font-size: 140px;
+        color: white;
+        margin-top: 200px;
+    }
+
+    .subText {
+        text-align: center;
+        font-size: 50px;
+        color: white;
+        margin-top: 10px;
+    }
+
+    .roundPic {
+        height: 350px;
+        width: 350px;
+        border: 5px solid white;
+        border-radius: 50%;
+        background: url('./assets/taavi.jpg') no-repeat center center;
+        background-size: cover;
+    }
+
+    .roundPicTwo {
+        height: 350px;
+        width: 350px;
+        border: 5px solid white;
+        border-radius: 50%;
+        background: url('./assets/patrick.png') no-repeat center center;
+        background-size: cover;
+    }
+
+    .message {
+        height: 150px;
+        width: 700px;
+        background-color: rgb(255, 99, 71);
+        color: white;
+        font-size: 60px;
+        border-radius: 100px;
+        line-height: 120px;
+        text-align: center;
+        margin-top: 200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .swiping {
+        height: 120px;
+        width: 700px;
+        background-color: rgb(255, 99, 71);
+        color: white;
+        font-size: 60px;
+        border-radius: 100px;
+        line-height: 120px;
+        text-align: center;
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+.topBar {
+    display: flex;
+    width: 100%;
+    height:150px;
+    padding: 25px 10px 0px 10px;
+}
+    
+    *{
+        margin: 0;
+        font-family: 'Product Scans';
+    }
+
+@font-face {
+font-family: 'product scan';
+font-style: normal;
+font-weight: 400;
+src: local('Open Scans'), local('Open Scans'), url(https://fonts.gstatic.com);
+}
+
+
+.Settings {
+ height: 100px;
+ width: 100px;
+ background: url('./assets/settings.svg') no-repeat center center;
+ background-size: contain;
+}
+
+.tinderLogo {
+    height: 100px;
+    width: 400px;
+    background: url('./assets/logo.png') no-repeat center center;
+    background-size: contain;
+    margin: 0px auto;
+}
+
+.messageBubble {
+    height: 100px;
+    width: 100px;
+    background: url('./assets/chat.svg') no-repeat center center;
+    background-size: contain;   
+}
+
+#card {
+    position: absolute;
+    width: 100%;
+    top: 150px;
+    left: 0;
+    right: 0;
+    transition: 0.5s;
+    flex-shrink: 0;
+}
+
+#card2 {
+    position: absolute;
+    width: 100%;
+    top: 150px;
+    left: 0;
+    right: 0;
+    transition: 0.5s;
+    flex-shrink: 0;
+}
+
+#card3 {
+    position: absolute;
+    width: 100%;
+    top: 150px;
+    left: 0;
+    right: 0;
+    transition: 0.5s;
+    flex-shrink: 0;
+}
+
+#card4 {
+    position: absolute;
+    width: 100%;
+    top: 150px;
+    left: 0;
+    right: 0;
+    transition: 0.5s;
+    flex-shrink: 0;
+}
+
+#card5 {
+    position: absolute;
+    width: 100%;
+    top: 150px;
+    left: 0;
+    right: 0;
+    transition: 0.5s;
+    flex-shrink: 0;
+} 
+
+.picture {
+    height: 1050px;
+    width: 100%;
+    border-radius: 10px;
+    background: url('./assets/evan.png') no-repeat center center;
+    background-size: cover; 
+}
+
+.PictureTwo{
+    height: 1050px;
+    width: 100%;
+    border-radius: 10px;
+    margin-top: -1250px;
+    background: url('./assets/Zuck.jpg') no-repeat center center;
+}
+
+.PictureThree{
+    height: 1050px;
+    width: 100%;
+    border-radius: 10px;
+    margin-top: -1250px;
+    background: url('./assets/patrick.jpg') no-repeat center center;
+}
+
+.PictureFour{
+    height: 1050px;
+    width: 100%;
+    border-radius: 10px;
+    margin-top: -1250px;
+    background: url('./asset/taylor.jpg') no-repeat center center;
+}
+
+.PictureFive{
+    height: 1050px;
+    width: 100%;
+    border-radius: 10px;
+    margin-top: -1250px;
+    background: url('./asset/jennifer.jpg') no-repeat center center;
+}
+
+
+.picInfo {
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
+    padding-top: 40px;
+    border: 1px solid lightpink;
+    border-radius: 15px;
+    margin-top: -7px;
+    position: relative;
+    z-index: -1;
+}
+
+.name {
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.job {
+    font-size: 50px;
+    color: grey;
+
+}
+
+.bottomBar {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+    margin-bottom: auto;
+}
+
+
+.smallRing {
+    height: 150px;
+    width: 150px;
+    border: 30px rgb(255, 182, 193) solid;
+    border-radius: 50%;
+}
+
+.Ring {
+    height: 160px;
+    width: 160px;
+    border: 30px rgb(255, 182, 193) solid;
+    border-radius: 50%;
+}
+
+.replayBtn {
+    height: 80px;
+    width: 80px;
+    background: url('./asset/replay-arrow.svg') no-repeat center center;
+    background-size: cover;
+    margin: 25px auto;
+}
+
+.closeBtn {
+    height: 80px;
+    width: 80px;
+    background: url('./asset/delete.svg') no-repeat center center;
+    background-size: cover;
+    margin: 40px auto;
+}
+
+.heartBtn {
+    height: 140px;
+    width: 140px;
+    background: url('./asset/Tinder-Heart.svg') no-repeat center center;
+    background-size: cover;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.starBtn {
+    height: 80px;
+    width: 80px;
+    background: url('./asset/star.svg') no-repeat center center;
+    background-size: cover;
+    margin: 15px auto;
+}
+</style>
+
+</html>
